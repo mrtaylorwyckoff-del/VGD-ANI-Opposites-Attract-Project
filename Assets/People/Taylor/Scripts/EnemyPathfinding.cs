@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.GraphView;
 
 public class EnemyPathfinding : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public Rigidbody2D rb;
+    [Header("References")]
+    [SerializeField] private Rigidbody2D rb; 
+    
+    [Header("Attributes")]
+    [SerializeField] private float moveSpeed = 2f;
 
     private Transform target;
     private int pathIndex = 0;
