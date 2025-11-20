@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour
+public class Settings : MonoBehaviour
 {
     public void OnStartButtonClick()
     {
-        SceneManager.LoadScene("TaylorScene");
+        SceneManager.LoadScene("Settings");
     }
 
 public void OnSettingsButtonClick()
