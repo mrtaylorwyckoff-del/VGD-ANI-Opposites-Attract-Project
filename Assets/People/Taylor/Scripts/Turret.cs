@@ -62,6 +62,7 @@ public class Turret : MonoBehaviour
     {
         return Vector2.Distance(transform.position, target.position) <= range;
     }
+
     private void RotateTowardsTarget()
     { 
         float angle  = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
@@ -77,5 +78,4 @@ public class Turret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
-
 }

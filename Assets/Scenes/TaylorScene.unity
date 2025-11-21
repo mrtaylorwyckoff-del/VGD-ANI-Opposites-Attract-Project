@@ -20446,7 +20446,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   bulletPrefab: {fileID: 0}
-  firingPoint: {fileID: 366402968}
+  firingPoint: {fileID: 0}
   range: 4.4
   bps: 1
   targetingRange: 4.4
