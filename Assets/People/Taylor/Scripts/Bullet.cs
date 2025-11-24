@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -9,6 +10,7 @@ public class Bullet : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private float damage = 1f;
+    [SerializeField] private int bulletDamage = 1;
 
     private Transform target;
 
@@ -30,11 +32,9 @@ public class Bullet : MonoBehaviour
         rb.linearVelocity = direction * bulletSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        other.gameObject.GetComponent<Health>().TakeDamage(bulletDamage);
         Destroy(gameObject);
     }
-
-
-
 }
