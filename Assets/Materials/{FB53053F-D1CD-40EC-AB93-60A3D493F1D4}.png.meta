@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7712ced8db8bd564b943c98f1092ec81
+guid: 420da3acd5062fb4f8b84100e75563dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8986649088406608913
-    second: UpArrow_0
+      213: -6166723906692696375
+    second: '{FB53053F-D1CD-40EC-AB93-60A3D493F1D4}_0'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UpArrow_0
+      name: '{FB53053F-D1CD-40EC-AB93-60A3D493F1D4}_0'
       rect:
         serializedVersion: 2
-        x: 38
-        y: 19
-        width: 123
-        height: 163
+        x: 0
+        y: 0
+        width: 845
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11c509b8bbdf6bc70800000000000000
-      internalID: 8986649088406608913
+      spriteID: 9c63ca197456b6aa0800000000000000
+      internalID: -6166723906692696375
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      UpArrow_0: 8986649088406608913
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
