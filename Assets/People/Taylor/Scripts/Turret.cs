@@ -1,8 +1,6 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
-
 {
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
@@ -10,9 +8,9 @@ public class Turret : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
 
-    [Header("Attribute")]
-    [SerializeField] private float range = 5f;
-    [SerializeField] private float bps = 1f;
+    [Header("Attributes")]
+    [SerializeField] private float rotateSpeed = 5f;
+    [SerializeField] private float bps = 1f; // bullets per second
     [SerializeField] private float targetingRange = 5f;
 
     private Transform target;
@@ -23,7 +21,6 @@ public class Turret : MonoBehaviour
         if (target == null)
         {
             FindTarget();
-            return;
         }
 
         RotateTowardsTarget();
@@ -31,51 +28,65 @@ public class Turret : MonoBehaviour
         if (!CheckTargetIsInRange())
         {
             target = null;
+            return;
         }
-        else
-        {
-            timeUntilFire -= Time.deltaTime;
 
-            if (timeUntilFire >= 1f / bps)
-            {
-                Shoot();
-                timeUntilFire = 0f;
-            }
+        // count down and fire when <= 0
+        timeUntilFire -= Time.deltaTime;
+        if (timeUntilFire <= 0f)
+        {
+            Shoot();
+            timeUntilFire = 1f / Mathf.Max(0.0001f, bps);
         }
     }
 
     private void Shoot()
-    {
-        Debug.Log("Shooted");
+    {   
+       GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        bulletScript.SetTarget(target);
     }
+
     private void FindTarget()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
-
+        // Use OverlapCircleAll for an immediate range check
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, targetingRange, enemyMask);
         if (hits.Length > 0)
         {
-            target = hits[0].transform;
+            // pick the closest
+            float bestDist = float.MaxValue;
+            Transform best = null;
+            foreach (var c in hits)
+            {
+                float d = Vector2.Distance(transform.position, c.transform.position);
+                if (d < bestDist)
+                {
+                    bestDist = d;
+                    best = c.transform;
+                }
+            }
+            target = best;
         }
     }
 
     private bool CheckTargetIsInRange()
     {
-        return Vector2.Distance(transform.position, target.position) <= range;
+        if (target == null) return false;
+        return Vector2.Distance(transform.position, target.position) <= targetingRange;
     }
 
     private void RotateTowardsTarget()
-    { 
-        float angle  = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
+    {
+        if (target == null || turretRotationPoint == null) return;
 
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        turretRotationPoint.rotation = targetRotation;
+        turretRotationPoint.rotation = Quaternion.Lerp(turretRotationPoint.rotation, targetRotation, rotateSpeed * Time.deltaTime);
     }
-    
 
-    //circle for range
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, targetingRange);
     }
 }
