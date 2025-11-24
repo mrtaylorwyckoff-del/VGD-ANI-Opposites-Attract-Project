@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/TaylorScene.unity
     guid: 3e08909c793a957499642850a5dd88e5
   - enabled: 1
-    path: Assets/People/Taylor/Scenes/Settings.unity
-    guid: baa7d670a92c54b4896372d8efd284a2
-  - enabled: 1
     path: Assets/People/Taylor/Scenes/Quit.unity
     guid: 6bf017c74b1e65e458d397ab273364b0
   - enabled: 1
     path: Assets/People/Taylor/Scenes/Credits.unity
     guid: 52fe2e99b72421043bef01e464a950f2
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/Settings.unity
+    guid: a8d62c49b6376394e9b9018ef59e4cf9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
