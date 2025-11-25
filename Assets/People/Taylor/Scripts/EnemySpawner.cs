@@ -55,7 +55,6 @@ public class EnemySpawner : MonoBehaviour
     
     private IEnumerator StartWave()
     {
-        Debug.Log("I am doing nothing. Then how am I saying this if I'm doing nothing?");
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
