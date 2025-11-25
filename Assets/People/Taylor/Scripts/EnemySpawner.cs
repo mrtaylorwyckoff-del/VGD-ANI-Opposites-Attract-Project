@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
-    private int enemiesAlives;
+    private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
@@ -26,11 +26,14 @@ public class EnemySpawner : MonoBehaviour
     {
         if (!isSpawning) return;
 
-        timeSinceLastSpawn += Time.deltaTime; 
+        timeSinceLastSpawn += Time.deltaTime;
 
-        if(timeSinceLastSpawn >= (1f / enemiesPerSecond))
+        if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
         {
-            Debug.Log("Er hat gespawndet");
+            SpawnEnemy();
+            enemiesLeftToSpawn--;
+            enemiesAlive++;
+            timeSinceLastSpawn = 0f;
         }
     }
 
@@ -38,6 +41,12 @@ public class EnemySpawner : MonoBehaviour
     {
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
+    }
+
+    private void SpawnEnemy()
+    {
+        GameObject prefabToSpawn = enemyPrefabs[0];
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
 
     private int EnemiesPerWave()
