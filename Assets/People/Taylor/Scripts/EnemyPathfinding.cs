@@ -25,7 +25,7 @@ public class EnemyPathfinding : MonoBehaviour
             pathIndex++;
             if (pathIndex >= LevelManager.main.path.Length)
             {
-                //Player.health -= 1;
+                EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
