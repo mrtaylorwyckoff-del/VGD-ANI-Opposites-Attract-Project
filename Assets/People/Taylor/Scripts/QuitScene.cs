@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Quit : MonoBehaviour
+public class QuitScene : MonoBehaviour
 {
     public void OnQuitButtonClick()
     {
