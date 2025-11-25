@@ -1,21 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class GoBack : MonoBehaviour
 {
-    public void OnStartButtonClick()
+    public void OnGoBackButtonClick()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("StartMenu");
     }
 
-public void OnSettingsButtonClick()
-    {
-      Debug.Log("*flips* hooray!");
-    }
-
-public void OnQuitButtonClick()
-    {
-        Application.Quit();
-        Debug.Log("*flips* Hooray!");
-    }
 }

@@ -3,19 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
-    public void OnStartButtonClick()
+    public void OnSettingsButtonClick()
     {
         SceneManager.LoadScene("Settings");
     }
 
-public void OnSettingsButtonClick()
-    {
-      Debug.Log("*flips* hooray!");
-    }
-
-public void OnQuitButtonClick()
-    {
-        Application.Quit();
-        Debug.Log("*flips* Hooray!");
-    }
+ 
 }

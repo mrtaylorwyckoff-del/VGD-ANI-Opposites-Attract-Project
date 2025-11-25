@@ -8,14 +8,4 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene("TaylorScene");
     }
 
-public void OnSettingsButtonClick()
-    {
-      Debug.Log("*flips* hooray!");
-    }
-
-public void OnQuitButtonClick()
-    {
-        Application.Quit();
-        Debug.Log("*flips* Hooray!");
-    }
 }
