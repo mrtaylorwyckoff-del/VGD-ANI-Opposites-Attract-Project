@@ -7,7 +7,7 @@ public class Plots : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color hoverColor;
 
-    private GameObject turret;
+    private GameObject tower;
     private Color startcolor;
 
     private void Start()
@@ -27,13 +27,21 @@ public class Plots : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (turret != null)
+        if (tower != null)
         {
-            Debug.Log("Can't build there! Plot already occupied.");
             return;
         }
-        GameObject turretToBuild = BuildManager.main.GetSelectedTower();
-        turret = Instantiate(turretToBuild, transform.position, Quaternion.identity);
-        Debug.Log("Turret built!");
+
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
+
+        if (towerToBuild.cost > LevelManager.main.currency)
+        {
+            Debug.Log("Broke");
+            return;
+        }
+
+        LevelManager.main.SpendCurrency(towerToBuild.cost);
+
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 }
