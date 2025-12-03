@@ -7,5 +7,4 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene("TaylorScene");
     }
-
 }
