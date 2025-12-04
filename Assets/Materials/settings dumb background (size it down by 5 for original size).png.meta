@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d862fd6e591b4dd4ea87f8bedc4ee04a
+guid: b868ac66f5852264da763fe7a660c0d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8860937364809856770
-    second: Shop Art_0
+      213: 7525809899550708195
+    second: settings dumb background (size it down by 5 for original size)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shop Art_0
+      name: settings dumb background (size it down by 5 for original size)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1130
+        height: 1115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2073a76069f58fa70800000000000000
-      internalID: 8860937364809856770
+      spriteID: 3e196ddea3c017860800000000000000
+      internalID: 7525809899550708195
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shop Art_0: 8860937364809856770
+      settings dumb background (size it down by 5 for original size)_0: 7525809899550708195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
