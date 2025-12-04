@@ -1,7 +1,9 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
 public class EnemySpawner : MonoBehaviour
 {
     [Header("References")]
@@ -21,6 +23,7 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
+    private int enemyIndex = 0; 
 
     private void Awake()
     {
@@ -48,11 +51,18 @@ public class EnemySpawner : MonoBehaviour
     }
 
     private void EnemyDestroyed()
-    { 
+    {
         enemiesAlive--;
+
+        // if all spawned enemies are gone and nothing left to spawn, end wave and schedule next
+        if (enemiesAlive <= 0 && enemiesLeftToSpawn <= 0)
+        {
+            EndWave();
+            currentWave++;
+            StartCoroutine(StartWave());
+        }
     }
 
-    
     private IEnumerator StartWave()
     {
         yield return new WaitForSeconds(timeBetweenWaves);
@@ -62,14 +72,22 @@ public class EnemySpawner : MonoBehaviour
 
     private void EndWave()
     {
+        enemyIndex = 0;
         isSpawning = false;
         timeSinceLastSpawn = 0f;
     }
 
     private void SpawnEnemy()
     {
-        GameObject prefabToSpawn = enemyPrefabs[0];
+        //int index = Random.Range(0, enemyPrefabs.Length);
+        Debug.Log(enemyIndex);
+        GameObject prefabToSpawn = enemyPrefabs[enemyIndex];
+        enemyIndex++;
         Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+        if (enemyPrefabs.Length <= enemyIndex)
+        {
+            EndWave();
+        }
     }
 
     private int EnemiesPerWave()
