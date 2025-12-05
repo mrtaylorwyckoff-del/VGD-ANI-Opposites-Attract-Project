@@ -1,16 +1,10 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections.Specialized;
 
-public class WaveData : MonoBehaviour
+public class WaveData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string waveName;
+    public List<GameObject> enemyPrefabsInWave;
+    public int totalEnemyCount;
 }

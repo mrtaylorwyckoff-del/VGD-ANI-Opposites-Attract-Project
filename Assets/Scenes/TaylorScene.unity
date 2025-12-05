@@ -918,7 +918,7 @@ MonoBehaviour:
   - {fileID: 1098567574}
   - {fileID: 147296123}
   - {fileID: 570748919}
-  currency: 200
+  currency: 500
 --- !u!4 &129797074
 Transform:
   m_ObjectHideFlags: 0
@@ -946,13 +946,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db32d2e203229744aa5de4167c9d57dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 1105823653738081693, guid: eedfa54460711f441867ac75707a80c4, type: 3}
-  - {fileID: 6182766042494440593, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
+  enemyPrefabs: []
   baseEnemies: 10
   enemiesPerSecond: 2
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
+  wavesConfigList:
+  - {fileID: 305276265}
+  - {fileID: 343593196}
 --- !u!114 &129797076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2363,6 +2364,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4906417789264701591, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
   m_PrefabInstance: {fileID: 1974955379}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &305276262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305276263}
+  - component: {fileID: 305276265}
+  - component: {fileID: 305276264}
+  m_Layer: 0
+  m_Name: Wave 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305276263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305276262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855792982}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305276264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305276262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db32d2e203229744aa5de4167c9d57dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
+  - {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
+  baseEnemies: 8
+  enemiesPerSecond: 0.5
+  timeBetweenWaves: 5
+  difficultyScalingFactor: 0.75
+  wavesConfigList:
+  - {fileID: 305276265}
+--- !u!114 &305276265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305276262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704230935542f0340b0cbc0ca3b18f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveName: 
+  enemyPrefabsInWave: []
+  totalEnemyCount: 0
 --- !u!4 &305877699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4906417789264701591, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
@@ -2809,6 +2879,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
+--- !u!1 &343593193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343593194}
+  - component: {fileID: 343593196}
+  - component: {fileID: 343593195}
+  m_Layer: 0
+  m_Name: Wave 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343593194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343593193}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855792982}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343593195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343593193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db32d2e203229744aa5de4167c9d57dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 8669402417917560883, guid: 03aae93a7fae0dd47a8eb1fd47deb73c, type: 3}
+  - {fileID: 8669402417917560883, guid: 03aae93a7fae0dd47a8eb1fd47deb73c, type: 3}
+  - {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
+  - {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
+  baseEnemies: 8
+  enemiesPerSecond: 0.5
+  timeBetweenWaves: 5
+  difficultyScalingFactor: 0.75
+  wavesConfigList:
+  - {fileID: 343593196}
+--- !u!114 &343593196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343593193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704230935542f0340b0cbc0ca3b18f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveName: 
+  enemyPrefabsInWave: []
+  totalEnemyCount: 0
 --- !u!4 &353593078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4906417789264701591, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
@@ -6703,6 +6844,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4906417789264701591, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
   m_PrefabInstance: {fileID: 747086411}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &855792981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 855792982}
+  m_Layer: 0
+  m_Name: WaveData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855792982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855792981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 305276263}
+  - {fileID: 343593194}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &856921488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4906417789264701591, guid: 4c0405ea3c30a064daf67c8ab6a75c76, type: 3}
@@ -16443,6 +16617,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 129797074}
+  - {fileID: 855792982}
   - {fileID: 475592241}
   - {fileID: 1441892588}
   - {fileID: 1156128474}
