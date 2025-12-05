@@ -18,6 +18,9 @@ public class EnemySpawner : MonoBehaviour
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
+    [Header("Wave Configuration")]
+    [SerializeField] private WaveData[] wavesConfigList;
+
     private int currentWave = 1;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
