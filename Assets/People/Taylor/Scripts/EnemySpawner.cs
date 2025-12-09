@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,17 +10,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
 
     [Header("Attributes")]
-    [SerializeField] private int baseEnemies = 8;
     [SerializeField] private float enemiesPerSecond = 0.5f;
-    [SerializeField] private float timeBetweenWaves = 5f;
-    [SerializeField] private float difficultyScalingFactor = 0.75f;
+    [SerializeField] private float timeBetweenWaves = 2f;
 
-
-    //copilot code, check if everything breaks
     [Header("Wave Data")]
-    [Tooltip("If true, use the WaveData assets below to configure each wave. If false, falls back to scaling formula.")]
     [SerializeField] private bool useWaveData = true;
-    [Tooltip("Assign up to N WaveData assets (one per wave). The spawner will use Waves[waveIndex] for that wave if present.")]
     [SerializeField] private WaveData[] Waves = new WaveData[12];
 
     [Header("Events")]
@@ -33,7 +26,6 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
-    //generated sequence of prefab indices for the current wave
     private List<GameObject> spawnSequence;
     private int spawnIndex;
 
@@ -70,7 +62,6 @@ public class EnemySpawner : MonoBehaviour
     {
         enemiesAlive--;
 
-        // if all spawned enemies are gone and nothing left to spawn, end wave and schedule next
         if (enemiesAlive <= 0 && enemiesLeftToSpawn <= 0)
         {
             EndWave();
@@ -114,15 +105,13 @@ public class EnemySpawner : MonoBehaviour
         }
         else
         {
-            // fallback to random spawning based on current wave
+            //fallback to random spawning based on current wave
             for (int i = 0; i < enemiesLeftToSpawn; i++)
             {
                 int prefabIndex = Random.Range(0, enemyPrefabs.Length);
                 spawnSequence.Add(enemyPrefabs[prefabIndex]);
             }
         }
-        // shuffle the spawn sequence for randomness
-        spawnSequence = spawnSequence.OrderBy(x => Random.value).ToList();
     }
 
     // Spawn the next enemy in the sequence please copilot I'm begging you
