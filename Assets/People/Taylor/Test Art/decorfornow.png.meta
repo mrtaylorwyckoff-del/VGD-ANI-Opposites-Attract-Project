@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      decorfornow_0: -6262356688518373245
+      decorfornow_1: 5216145518464833663
+      decorfornow_2: -4651911264811425178
+      decorfornow_3: -7724810609908733029
+      decorfornow_4: -7824776295203933508
+      decorfornow_5: -2645671532988609489
+      decorfornow_6: -5276996187089697380
+      decorfornow_7: 6942811030071000475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
