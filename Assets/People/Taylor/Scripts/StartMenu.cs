@@ -5,6 +5,6 @@ public class StartMenu : MonoBehaviour
 {
     public void OnStartButtonClick()
     {
-        SceneManager.LoadScene("TaylorScene");
+        SceneManager.LoadScene("LevelSelect");
     }
 }
