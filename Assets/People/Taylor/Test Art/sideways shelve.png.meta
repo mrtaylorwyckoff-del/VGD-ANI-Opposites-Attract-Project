@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sideways shelve_0: 4991706915438875739
+      sideways shelve_1: -1458240307089353704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
