@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knight no background 1_0: -5630556779987432990
+      knight no background 1_1: -3064985824528899379
+      knight no background 1_10: 6930185661632987600
+      knight no background 1_11: 8929882263762891068
+      knight no background 1_2: -5474761246254589666
+      knight no background 1_3: 759636982508819691
+      knight no background 1_4: -1725070110535723202
+      knight no background 1_5: 8846464161272737157
+      knight no background 1_6: -5294645466068435204
+      knight no background 1_7: 8526620922583525689
+      knight no background 1_8: 8535426569975623770
+      knight no background 1_9: -7473920550961897780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
