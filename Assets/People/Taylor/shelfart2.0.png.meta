@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shelfart2.0_0: -5928318745135861542
+      shelfart2.0_1: 5662272549831218382
+      shelfart2.0_2: 4503047861016459467
+      shelfart2.0_3: 3463993708658266454
+      shelfart2.0_4: -3581161446512158301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
