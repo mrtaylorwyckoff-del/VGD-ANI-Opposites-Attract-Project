@@ -956,10 +956,8 @@ MonoBehaviour:
   - {fileID: 7916888801237444055, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
   - {fileID: 4959246349102037937, guid: 207e08c07f6d6814ebc9b465db407e27, type: 3}
   - {fileID: 7842888150317772524, guid: 51ced9007b3d18049bfcb5e90845e212, type: 3}
-  baseEnemies: 0
-  enemiesPerSecond: 2
+  enemiesPerSecond: 1
   timeBetweenWaves: 2
-  difficultyScalingFactor: 0
   useWaveData: 1
   Waves:
   - {fileID: 11400000, guid: 8fd1e5774d5bce849bab5bff5385241b, type: 2}

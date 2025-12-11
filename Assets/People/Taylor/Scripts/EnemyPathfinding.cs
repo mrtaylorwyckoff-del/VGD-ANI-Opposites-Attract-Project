@@ -39,25 +39,20 @@ public class EnemyPathfinding : MonoBehaviour
             }
         }
 
-        //Set the animator to play the correct animation based on movement direction
-        float angle = Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x) * Mathf.Rad2Deg;
-        animator.SetFloat("Angle", angle);
+    // Update animator parameters
+        Vector2 direction = (target.position - transform.position).normalized;
+        animator.SetFloat("MoveX", direction.x);
+        animator.SetFloat("MoveY", direction.y);
 
-        if (rb.linearVelocity.magnitude > 0.1f)
+        // Flip sprite based on movement direction
+        if (direction.x != 0)
         {
-            animator.SetBool("isMoving", true);
+            Vector3 scale = transform.localScale;
+            scale.x = direction.x < 0 ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
+            transform.localScale = scale;
         }
-        else
-        {
-            animator.SetBool("isMoving", false);
-        }
-
-        if (animator == null)
-        {
-            animator = GetComponent<Animator>();
-        }
-
     }
+
     private void FixedUpdate()
     {
         Vector2 direction = (target.position - transform.position).normalized;
