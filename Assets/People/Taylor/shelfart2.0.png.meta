@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 7c831383b5d03cf448448ae5392ba573
+guid: 843c269a253bd964b8ff8c72f2e79acf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4370691985640760180
-    second: Rouge Robot Attack Sprite Sheet_0
+      213: -5928318745135861542
+    second: shelfart2.0_0
+  - first:
+      213: 5662272549831218382
+    second: shelfart2.0_1
+  - first:
+      213: 4503047861016459467
+    second: shelfart2.0_2
+  - first:
+      213: 3463993708658266454
+    second: shelfart2.0_3
+  - first:
+      213: -3581161446512158301
+    second: shelfart2.0_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rouge Robot Attack Sprite Sheet_0
+      name: shelfart2.0_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 514
-        height: 171
+        x: 121
+        y: 723
+        width: 709
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 473a3ca3431d7ac30800000000000000
-      internalID: 4370691985640760180
+      spriteID: ad033e8c2816abda0800000000000000
+      internalID: -5928318745135861542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelfart2.0_1
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 485
+        width: 797
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4922252ee649e40800000000000000
+      internalID: 5662272549831218382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelfart2.0_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 466
+        width: 797
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8f772eb2a0e7e30800000000000000
+      internalID: 4503047861016459467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelfart2.0_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 205
+        width: 781
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65193cccce3921030800000000000000
+      internalID: 3463993708658266454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelfart2.0_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 233
+        width: 797
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9915163a82d4ec0800000000000000
+      internalID: -3581161446512158301
       vertices: []
       indices: 
       edges: []
@@ -160,8 +260,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Rouge Robot Attack Sprite Sheet_0: 4370691985640760180
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

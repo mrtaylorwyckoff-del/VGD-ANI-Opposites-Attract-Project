@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c831383b5d03cf448448ae5392ba573
+guid: 0f6ca8f28c356fd4ca9c9660e645ad90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4370691985640760180
-    second: Rouge Robot Attack Sprite Sheet_0
+      213: 2375207861421983252
+    second: crashedCAR_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rouge Robot Attack Sprite Sheet_0
+      name: crashedCAR_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 514
-        height: 171
+        x: 752
+        y: 289
+        width: 301
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 473a3ca3431d7ac30800000000000000
-      internalID: 4370691985640760180
+      spriteID: 416c5cf27fe66f020800000000000000
+      internalID: 2375207861421983252
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Rouge Robot Attack Sprite Sheet_0: 4370691985640760180
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
