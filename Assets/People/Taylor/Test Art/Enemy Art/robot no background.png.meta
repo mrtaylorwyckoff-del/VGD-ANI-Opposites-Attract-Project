@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: bf148c9a859d98e4c85b6f2f156ddafa
+guid: d92a7fbf705b27945a21f7b43ef932b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3570138014173530107
-    second: robot no background 1_0
+      213: -4195411342933012731
+    second: robot no background_0
   - first:
-      213: 4669631750117293842
-    second: robot no background 1_1
+      213: 3316734954401612143
+    second: robot no background_1
   - first:
-      213: 8333133167653004526
-    second: robot no background 1_2
+      213: -7326310599667413520
+    second: robot no background_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robot no background 1_0
+      name: robot no background_0
       rect:
         serializedVersion: 2
         x: 25
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf78ee5cb9dab8130800000000000000
-      internalID: 3570138014173530107
+      spriteID: 50f45d1ac97e6c5c0800000000000000
+      internalID: -4195411342933012731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot no background 1_1
+      name: robot no background_1
       rect:
         serializedVersion: 2
         x: 190
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21f70a1065dddc040800000000000000
-      internalID: 4669631750117293842
+      spriteID: f61ca334ed8670e20800000000000000
+      internalID: 3316734954401612143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot no background 1_2
+      name: robot no background_2
       rect:
         serializedVersion: 2
         x: 354
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee4abf3177c35a370800000000000000
-      internalID: 8333133167653004526
+      spriteID: 0fd05a87357b35a90800000000000000
+      internalID: -7326310599667413520
       vertices: []
       indices: 
       edges: []
@@ -211,9 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      robot no background 1_0: 3570138014173530107
-      robot no background 1_1: 4669631750117293842
-      robot no background 1_2: 8333133167653004526
+      robot no background_0: -4195411342933012731
+      robot no background_1: 3316734954401612143
+      robot no background_2: -7326310599667413520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

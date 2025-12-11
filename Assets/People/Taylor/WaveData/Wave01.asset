@@ -15,8 +15,10 @@ MonoBehaviour:
   waveName: Wave01
   enemies:
   - prefab: {fileID: 3253400400040926456, guid: 68834a667a14f4e469cb072b1622e186, type: 3}
-    count: 3
+    count: 4
   - prefab: {fileID: 622762674110007080, guid: 16c5963752ecdb9478cab6bf3ca97fc5, type: 3}
     count: 1
   - prefab: {fileID: 7916888801237444055, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
-    count: 2
+    count: 4
+  - prefab: {fileID: 3253400400040926456, guid: 68834a667a14f4e469cb072b1622e186, type: 3}
+    count: 10

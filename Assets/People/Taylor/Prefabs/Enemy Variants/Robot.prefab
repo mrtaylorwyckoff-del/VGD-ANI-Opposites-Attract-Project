@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1085007103569788043, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1092467341710992028, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,30 +70,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.b
-      value: 0.254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.g
-      value: 0.254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.r
-      value: 0.254717
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2021009487496520907, guid: eedfa54460711f441867ac75707a80c4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1105823653738081693, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8438028645356102095}
+      addedObject: {fileID: 3206670098088122311}
+    - targetCorrespondingSourceObject: {fileID: 1105823653738081693, guid: eedfa54460711f441867ac75707a80c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6916835761126281427}
   m_SourcePrefab: {fileID: 100100000, guid: eedfa54460711f441867ac75707a80c4, type: 3}
 --- !u!1 &3253400400040926456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105823653738081693, guid: eedfa54460711f441867ac75707a80c4, type: 3}
   m_PrefabInstance: {fileID: 2485646885072007525}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &8438028645356102095
+--- !u!114 &3206670098088122311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253400400040926456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6f410ab4bc2674596a5c5b2ace98d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 7
+  currencyOnDestroy: 35
+  movementSpeed: 2
+  damageNegationModifier: 0.2
+--- !u!95 &-6916835761126281427
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -103,7 +123,7 @@ Animator:
   m_GameObject: {fileID: 3253400400040926456}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65e776814192573499870ed46dc2f711, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1750adb01d544784e8cbae23ee52a6ff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

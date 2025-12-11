@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: bf148c9a859d98e4c85b6f2f156ddafa
+guid: 28d67c3ae834f294eac094f5233cb6de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3570138014173530107
-    second: robot no background 1_0
+      213: 2257053734593093972
+    second: Riot Zombie (no armor) sprite sheet_0
   - first:
-      213: 4669631750117293842
-    second: robot no background 1_1
+      213: -5464760032102895387
+    second: Riot Zombie (no armor) sprite sheet_1
   - first:
-      213: 8333133167653004526
-    second: robot no background 1_2
+      213: 6249723250092707038
+    second: Riot Zombie (no armor) sprite sheet_2
+  - first:
+      213: 4140902848916009407
+    second: Riot Zombie (no armor) sprite sheet_3
+  - first:
+      213: -4392387662003147767
+    second: Riot Zombie (no armor) sprite sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robot no background 1_0
+      name: Riot Zombie (no armor) sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 0
-        width: 120
-        height: 171
+        x: 23
+        y: 8
+        width: 149
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf78ee5cb9dab8130800000000000000
-      internalID: 3570138014173530107
+      spriteID: 451e369c96aa25f10800000000000000
+      internalID: 2257053734593093972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot no background 1_1
+      name: Riot Zombie (no armor) sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 190
-        y: 0
-        width: 138
-        height: 171
+        x: 222
+        y: 8
+        width: 152
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21f70a1065dddc040800000000000000
-      internalID: 4669631750117293842
+      spriteID: 5e031cf44b54924b0800000000000000
+      internalID: -5464760032102895387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot no background 1_2
+      name: Riot Zombie (no armor) sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 354
-        y: 0
-        width: 156
-        height: 171
+        x: 423
+        y: 7
+        width: 153
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +197,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee4abf3177c35a370800000000000000
-      internalID: 8333133167653004526
+      spriteID: edc864afe2a7bb650800000000000000
+      internalID: 6249723250092707038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riot Zombie (no armor) sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 8
+        width: 149
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1ba0f9331777930800000000000000
+      internalID: 4140902848916009407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riot Zombie (no armor) sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 8
+        width: 149
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c6e7a71ba1b03c0800000000000000
+      internalID: -4392387662003147767
       vertices: []
       indices: 
       edges: []
@@ -211,9 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      robot no background 1_0: 3570138014173530107
-      robot no background 1_1: 4669631750117293842
-      robot no background 1_2: 8333133167653004526
+      Riot Zombie (no armor) sprite sheet_0: 2257053734593093972
+      Riot Zombie (no armor) sprite sheet_1: -5464760032102895387
+      Riot Zombie (no armor) sprite sheet_2: 6249723250092707038
+      Riot Zombie (no armor) sprite sheet_3: 4140902848916009407
+      Riot Zombie (no armor) sprite sheet_4: -4392387662003147767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
