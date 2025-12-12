@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rouge Robot Sprite Sheet PNG_0: -6767690992420944875
+      Rouge Robot Sprite Sheet PNG_1: -834616366430763362
+      Rouge Robot Sprite Sheet PNG_2: -6334060456336472029
+      Rouge Robot Sprite Sheet PNG_3: 7593551691086575760
+      Rouge Robot Sprite Sheet PNG_4: 71328833753609075
+      Rouge Robot Sprite Sheet PNG_5: -816326928217366120
+      Rouge Robot Sprite Sheet PNG_6: -2246748615758274041
+      Rouge Robot Sprite Sheet PNG_7: 4208169067309404495
+      Rouge Robot Sprite Sheet PNG_8: -5109298395256379933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
