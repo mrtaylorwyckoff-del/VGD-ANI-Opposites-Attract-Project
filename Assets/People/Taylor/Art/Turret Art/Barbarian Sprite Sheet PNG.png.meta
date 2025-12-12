@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barbarian Sprite Sheet PNG_0: 7748064947455781433
+      Barbarian Sprite Sheet PNG_1: 1185597073010062765
+      Barbarian Sprite Sheet PNG_2: -7597727673283453611
+      Barbarian Sprite Sheet PNG_3: -316107673198663740
+      Barbarian Sprite Sheet PNG_4: -9189338133753083814
+      Barbarian Sprite Sheet PNG_5: 7299956565663520581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

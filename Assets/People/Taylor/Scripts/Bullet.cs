@@ -1,5 +1,6 @@
 using Unity.Cinemachine;
 using UnityEngine;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class Bullet : MonoBehaviour
 {
@@ -40,6 +41,12 @@ public class Bullet : MonoBehaviour
             robotHealth.TakeDamage(bulletDamage);
         }
 
+        ZombieStats zombieStats = other.gameObject.GetComponent<ZombieStats>();
+        if (zombieStats != null)
+        {
+            zombieStats.TakeDamage(bulletDamage);
+        }
+
         Health health = other.gameObject.GetComponent<Health>();
         if (health != null)
         {
@@ -49,3 +56,4 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
