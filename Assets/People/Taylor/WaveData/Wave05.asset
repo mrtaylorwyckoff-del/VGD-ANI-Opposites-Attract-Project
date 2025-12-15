@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 704230935542f0340b0cbc0ca3b18f16, type: 3}
-  m_Name: Wave01
+  m_Name: Wave05
   m_EditorClassIdentifier: 
-  waveName: Wave01
+  waveName: Wave05
   enemies:
-  - prefab: {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
-    count: 2
+  - prefab: {fileID: 8669402417917560883, guid: 03aae93a7fae0dd47a8eb1fd47deb73c, type: 3}
+    count: 5
+  - prefab: {fileID: 7916888801237444055, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
+    count: 3

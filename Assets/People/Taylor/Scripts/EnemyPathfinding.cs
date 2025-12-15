@@ -39,12 +39,10 @@ public class EnemyPathfinding : MonoBehaviour
             }
         }
 
-    // Update animator parameters
         Vector2 direction = (target.position - transform.position).normalized;
         animator.SetFloat("MoveX", direction.x);
         animator.SetFloat("MoveY", direction.y);
 
-        // Flip sprite based on movement direction
         if (direction.x != 0)
         {
             Vector3 scale = transform.localScale;
