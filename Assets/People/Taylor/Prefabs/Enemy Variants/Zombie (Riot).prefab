@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1635254839869455469, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160093862221740821, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 64b9503011f2b3c4cb9098f894fff479, type: 2}
     - target: {fileID: 7892668968383788225, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
       propertyPath: moveSpeed
       value: 1
@@ -66,15 +74,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193094506158414053, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9193094506158414053, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9193094506158414053, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -99,7 +107,7 @@ Animator:
   m_GameObject: {fileID: 4959246349102037937}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bd5ecfca7d03c0468c2864a7a69be4a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
