@@ -29,7 +29,7 @@ public class ZombieStats : MonoBehaviour
         movementHandler = GetComponent<IMovementHandler>();
         if (movementHandler == null)
         {
-            Debug.LogError("Movement Handler component not found on " + gameObject.name);
+          
         }
 
         UpdateMovementSpeed();
