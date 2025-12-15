@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Riot Zombie (armor) sprite sheet_0: -4599538117842349056
+      Riot Zombie (armor) sprite sheet_1: -1334373374874127097
+      Riot Zombie (armor) sprite sheet_2: -3789493642370180108
+      Riot Zombie (armor) sprite sheet_3: -7433765822590284919
+      Riot Zombie (armor) sprite sheet_4: 8533933180459349049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
