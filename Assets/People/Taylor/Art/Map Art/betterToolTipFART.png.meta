@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c7fc92c6b9de05443ae8d5a9a446b090
+guid: 431f413ea9a9c6a4ca39428698f4c9d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9031177187480376078
-    second: TooltipFART_0
+      213: 7786682193231721576
+    second: betterToolTipFART_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TooltipFART_0
+      name: betterToolTipFART_0
       rect:
         serializedVersion: 2
-        x: 477
-        y: 572
-        width: 438
-        height: 238
+        x: 794
+        y: 388
+        width: 437
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fcee9c7230daa280800000000000000
-      internalID: -9031177187480376078
+      spriteID: 864bf6af23adf0c60800000000000000
+      internalID: 7786682193231721576
       vertices: []
       indices: 
       edges: []
