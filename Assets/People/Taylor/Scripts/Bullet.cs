@@ -53,7 +53,16 @@ public class Bullet : MonoBehaviour
             health.TakeDamage(bulletDamage);
         }
 
-        Destroy(gameObject);
+        RiotZombie riotZombie = other.gameObject.GetComponent<RiotZombie>();
+        if (riotZombie != null)
+        {
+            riotZombie.TakeDamage(bulletDamage);
+        }
+
+        Slime slime = other.gameObject.GetComponent<Slime>();
+        if (slime != null)
+        {
+            slime.TakeDamage(bulletDamage);
+        }
     }
 }
-
