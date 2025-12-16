@@ -197,7 +197,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.078704715, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 4574280125800957989}
   - component: {fileID: 4209854806009520775}
   m_Layer: 0
-  m_Name: Hobo
+  m_Name: Rich Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,8 +260,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3027792194700130330, guid: 5ae61e98e466b714999c287a6e2049cb, type: 3}
   firingPoint: {fileID: 5160990943628480047}
   rotateSpeed: 5
-  bps: 4
-  targetingRange: 1.5
+  bps: 0
+  targetingRange: 4
 --- !u!1 &9119188397973232850
 GameObject:
   m_ObjectHideFlags: 0
