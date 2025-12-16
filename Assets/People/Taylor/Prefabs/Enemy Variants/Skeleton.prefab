@@ -18,15 +18,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5154235776486533539, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
       propertyPath: m_Color.b
-      value: 0.6132076
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154235776486533539, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
       propertyPath: m_Color.g
-      value: 0.6132076
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154235776486533539, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
       propertyPath: m_Color.r
-      value: 0.6132076
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6168678056551482759, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
       propertyPath: moveSpeed
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 8669402417917560883}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2bde9ae087275849af0539d4aebb9db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

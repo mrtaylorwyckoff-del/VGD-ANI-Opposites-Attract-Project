@@ -39,20 +39,22 @@ public class Turret : MonoBehaviour
             timeUntilFire = 1f / Mathf.Max(0.0001f, bps);
         }
 
-        //adds animation to flip turret when rotating left or right
-        if (turretRotationPoint.rotation.eulerAngles.z > 90f && turretRotationPoint.rotation.eulerAngles.z < 270f)
+        //adds animation to turn turret left or right based on target position
+        if (target != null && turretRotationPoint != null)
         {
-            Vector3 scale = transform.localScale;
-            scale.y = -Mathf.Abs(scale.y);
-            transform.localScale = scale;
+            Vector3 direction = target.position - transform.position;
+            if (direction.x < 0)
+            {
+                // Target is to the left
+                turretRotationPoint.localScale = new Vector3(-1, 1, 1); // Flip the turret
+            }
+            else
+            {
+                // Target is to the right
+                turretRotationPoint.localScale = new Vector3(1, 1, 1); // Normal orientation
+            }
         }
-        else
-        {
-            Vector3 scale = transform.localScale;
-            scale.y = Mathf.Abs(scale.y);
-            transform.localScale = scale;
-        }
-    }
+}
 
     private void Shoot()
     {   

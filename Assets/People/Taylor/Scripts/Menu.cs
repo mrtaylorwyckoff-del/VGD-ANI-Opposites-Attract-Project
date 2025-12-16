@@ -7,10 +7,11 @@ public class Menu : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private TextMeshProUGUI currencyUI;
+    [SerializeField] private string currencyFormat;
 
     private void OnGUI()
     {
-        currencyUI.text = LevelManager.main.currency.ToString();
+        currencyUI.text = string.Format(currencyFormat, LevelManager.main.currency.ToString());
     }
 
     public void SetSelected()
