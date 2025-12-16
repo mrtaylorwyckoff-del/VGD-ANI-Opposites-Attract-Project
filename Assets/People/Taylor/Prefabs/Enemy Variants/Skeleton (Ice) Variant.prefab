@@ -18,15 +18,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4754008409661819786, guid: 9050d19a31e17a64ebc8a1baaa2b8924, type: 3}
       propertyPath: m_Color.b
-      value: 0.7610511
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4754008409661819786, guid: 9050d19a31e17a64ebc8a1baaa2b8924, type: 3}
       propertyPath: m_Color.g
-      value: 0.8301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4754008409661819786, guid: 9050d19a31e17a64ebc8a1baaa2b8924, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6031375027061962424, guid: 9050d19a31e17a64ebc8a1baaa2b8924, type: 3}
       propertyPath: m_Name
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 622762674110007080}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7eebf30edd8f3254ba33dfb9931c79e6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
