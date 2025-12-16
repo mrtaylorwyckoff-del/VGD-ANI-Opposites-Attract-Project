@@ -16,25 +16,22 @@ public class Slime : MonoBehaviour
     private int currentHealth;
     private bool isDestroyed = false;
 
-    public delegate void RobotKilledAction();
-    public static event RobotKilledAction OnRobotKilled;
+    public delegate void SlimeKilledAction();
+    public static event SlimeKilledAction OnSlimeKilled;
 
     private void Start()
     {
         currentHealth = maxHealth;
     }
 
-    /// <param name="rawDamage">The incoming damage amount.</param>
     public void TakeDamage(int rawDamage)
     {
         if (isDestroyed) return;
 
         float effectiveDamageFloat = rawDamage * (1f - damageNegationModifier);
-        int effectiveDamage = Mathf.RoundToInt(effectiveDamageFloat);
+        int effectiveDamage = Mathf.CeilToInt(effectiveDamageFloat);
 
         currentHealth -= effectiveDamage;
-
-        Debug.Log($"Slime took {effectiveDamage} effective damage (halved from {rawDamage}). Current Health: {currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -42,7 +39,6 @@ public class Slime : MonoBehaviour
         }
     }
 
-    /// <param name="healAmount">The amount of health to restore.</param>
     public void Heal(int healAmount)
     {
         if (isDestroyed) return;
@@ -57,20 +53,22 @@ public class Slime : MonoBehaviour
     private void Die()
     {
         isDestroyed = true;
+        OnSlimeKilled?.Invoke();
 
-        OnRobotKilled?.Invoke();
+        if (LevelManager.main != null) LevelManager.main.AddCurrency(currencyOnDestroy);
+        if (EnemySpawner.onEnemyDestroy != null) EnemySpawner.onEnemyDestroy.Invoke();
 
         Destroy(gameObject);
     }
 
     private void OnEnable()
     {
-        OnRobotKilled += RegainHealthOnOtherDeath;
+        OnSlimeKilled += RegainHealthOnOtherDeath;
     }
 
     private void OnDisable()
     {
-        OnRobotKilled -= RegainHealthOnOtherDeath;
+        OnSlimeKilled -= RegainHealthOnOtherDeath;
     }
 
     private void RegainHealthOnOtherDeath()

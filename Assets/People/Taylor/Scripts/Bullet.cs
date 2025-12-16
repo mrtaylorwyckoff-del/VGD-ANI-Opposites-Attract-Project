@@ -64,5 +64,17 @@ public class Bullet : MonoBehaviour
         {
             slime.TakeDamage(bulletDamage);
         }
+
+        GoblinKnight goblinKnight = other.gameObject.GetComponent<GoblinKnight>();
+        if (goblinKnight != null)
+        {
+            goblinKnight.TakeDamage(bulletDamage);
+        }
+
+        Goblin goblin = other.gameObject.GetComponent<Goblin>();
+        if (goblin != null)
+        {
+            goblin.TakeDamage(bulletDamage);
+        }
     }
 }

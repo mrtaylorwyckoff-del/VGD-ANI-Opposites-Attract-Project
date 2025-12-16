@@ -12,6 +12,6 @@ public class AutoLoadSM : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("Supermarket");
+        SceneManager.LoadScene("FINAL Level 1");
     }
 }

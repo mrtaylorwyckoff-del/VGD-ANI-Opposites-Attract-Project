@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ce7d56ba92758d1478520312d5bd4ec2
+guid: a6df9ef0fc3f43e438f618640ea0569e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6457866979304788584
-    second: knight (very evil)_0
+      213: 6033098623519725007
+    second: Carl_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knight (very evil)_0
+      name: Carl_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 374
-        height: 319
+        width: 321
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 862df2c6dc3fe9950800000000000000
-      internalID: 6457866979304788584
+      spriteID: fc59acdbb3fd9b350800000000000000
+      internalID: 6033098623519725007
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      knight (very evil)_0: 6457866979304788584
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
