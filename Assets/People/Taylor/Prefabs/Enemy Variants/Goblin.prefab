@@ -62,15 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.b
-      value: 0.033851307
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.g
-      value: 0.5754717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2094932581276717231, guid: eedfa54460711f441867ac75707a80c4, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 988884770836881220}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a016d3422e18a742b9600fcdf07b181, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

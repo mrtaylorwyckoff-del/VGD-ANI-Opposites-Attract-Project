@@ -38,17 +38,6 @@ public class EnemyPathfinding : MonoBehaviour
                 target = LevelManager.main.path[pathIndex];
             }
         }
-
-        Vector2 direction = (target.position - transform.position).normalized;
-        animator.SetFloat("MoveX", direction.x);
-        animator.SetFloat("MoveY", direction.y);
-
-        if (direction.x != 0)
-        {
-            Vector3 scale = transform.localScale;
-            scale.x = direction.x < 0 ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
-            transform.localScale = scale;
-        }
     }
 
     private void FixedUpdate()
