@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      evil scientist_0: -5561921698409616930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
