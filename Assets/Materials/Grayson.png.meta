@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 63126a08afb1baf47a078d2d2856cd98
+guid: 2bde15ff0477f6443b9fc04bbac96e10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3415109089114122082
-    second: slime sprite sheet_0
-  - first:
-      213: 881816756672119383
-    second: slime sprite sheet_1
-  - first:
-      213: 1726388210070022281
-    second: slime sprite sheet_2
-  - first:
-      213: 9210641195597329797
-    second: slime sprite sheet_3
-  - first:
-      213: -8527032974093979784
-    second: slime sprite sheet_4
+      213: -927864080396223033
+    second: Grayson_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime sprite sheet_0
+      name: Grayson_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 56
-        width: 146
-        height: 84
+        x: 0
+        y: 0
+        width: 275
+        height: 394
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e981522a0681b90d0800000000000000
-      internalID: -3415109089114122082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime sprite sheet_1
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 57
-        width: 123
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 752cd6a0ba7dc3c00800000000000000
-      internalID: 881816756672119383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime sprite sheet_2
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 58
-        width: 113
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98865a52eec55f710800000000000000
-      internalID: 1726388210070022281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime sprite sheet_3
-      rect:
-        serializedVersion: 2
-        x: 634
-        y: 59
-        width: 99
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58578290e55c2df70800000000000000
-      internalID: 9210641195597329797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime sprite sheet_4
-      rect:
-        serializedVersion: 2
-        x: 839
-        y: 56
-        width: 102
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87fe51f20b4e9a980800000000000000
-      internalID: -8527032974093979784
+      spriteID: 7cd7320f8809f13f0800000000000000
+      internalID: -927864080396223033
       vertices: []
       indices: 
       edges: []
@@ -260,12 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      slime sprite sheet_0: -3415109089114122082
-      slime sprite sheet_1: 881816756672119383
-      slime sprite sheet_2: 1726388210070022281
-      slime sprite sheet_3: 9210641195597329797
-      slime sprite sheet_4: -8527032974093979784
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

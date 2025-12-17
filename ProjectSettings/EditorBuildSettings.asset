@@ -19,19 +19,13 @@ EditorBuildSettings:
     guid: 6bf017c74b1e65e458d397ab273364b0
   - enabled: 1
     path: Assets/People/Taylor/Scenes/CreditSelect.unity
-    guid: 52fe2e99b72421043bef01e464a950f2
+    guid: 17c4ead4b68eb6a48af46be00d327422
   - enabled: 1
     path: Assets/People/Taylor/Scenes/SMLoading.unity
     guid: 81b46886dabbd51468fc2118058d3d04
   - enabled: 1
     path: Assets/People/Taylor/Scenes/Settings.unity
     guid: 369a052cae0db514da5cbce0abf30eda
-  - enabled: 1
-    path: Assets/People/Taylor/Scenes/Parking lot.unity
-    guid: 1e5f26c34252bc0438fd2b25b150fe7b
-  - enabled: 1
-    path: Assets/People/Taylor/Scenes/Supermarket.unity
-    guid: 970f18253fad03d4f9b63098304e4611
   - enabled: 1
     path: Assets/People/Taylor/Scenes/PLLoading.unity
     guid: 18fb0ac947bb7a246b4c40875fe48da6
@@ -44,6 +38,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FINAL Level 1.unity
     guid: 9df51d91b7f70a545a9e6f174668e80d
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/JaydenCredits.unity
+    guid: 44d1e466031ced245af1ed7c6507427d
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/GraysonCredits.unity
+    guid: 5d4759d4428ca9145bda63718e12d2a3
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/KatieCredits.unity
+    guid: 3c58bf21a1bea3242b8c007e2f3aab54
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/LeilaniCredits.unity
+    guid: 6ae6c47d27011ff44b3de313e321df2e
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/TaylorCredits.unity
+    guid: 00109623099a51d42800314503d20f0e
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/VanessaCredits.unity
+    guid: 976ce36bcc63d924293061eb1f7deb53
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
