@@ -2073,7 +2073,7 @@ MonoBehaviour:
   - {fileID: 1322669590}
   - {fileID: 1748718979}
   - {fileID: 1937174506}
-  currency: 500
+  currency: 1000
 --- !u!4 &129797074
 Transform:
   m_ObjectHideFlags: 0
@@ -2117,16 +2117,16 @@ MonoBehaviour:
   Waves:
   - {fileID: 11400000, guid: 8fd1e5774d5bce849bab5bff5385241b, type: 2}
   - {fileID: 11400000, guid: d27b1cf6c806797409b1df0a4ee43188, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8e2fb4f31ec729c4bb3437a10344ecd9, type: 2}
+  - {fileID: 11400000, guid: a05edcfe50bab2e4185794b8fb0e1c1a, type: 2}
+  - {fileID: 11400000, guid: 0b5f050116454ad4b95fcbd9190481fe, type: 2}
+  - {fileID: 11400000, guid: c01a1c066e48db2488eb30efa69b5fcc, type: 2}
+  - {fileID: 11400000, guid: 06052c7cbccb9bf4d83c4422ff7b9019, type: 2}
+  - {fileID: 11400000, guid: 8dd376ffb8a912e4f91b139a38b43888, type: 2}
+  - {fileID: 11400000, guid: bb82f5d83f4fa64428e566b16b8371d7, type: 2}
+  - {fileID: 11400000, guid: 3b9dd3e4042f5d24fae07dc041bcdbb1, type: 2}
+  - {fileID: 11400000, guid: 8f1cf76aff2c17f4e87ac7cacc64840c, type: 2}
+  - {fileID: 11400000, guid: 6f8eab454a30c1e4c8eab68735dc5cf5, type: 2}
 --- !u!114 &129797076
 MonoBehaviour:
   m_ObjectHideFlags: 0

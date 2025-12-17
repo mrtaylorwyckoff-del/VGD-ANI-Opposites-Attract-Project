@@ -40,21 +40,25 @@ public class Turret : MonoBehaviour
         }
 
         //adds animation to turn turret left or right based on target position
-        if (target != null && turretRotationPoint != null)
+        if (target != null)
         {
+            // Calculate the direction vector in 2D (X and Y components)
             Vector3 direction = target.position - transform.position;
+
             if (direction.x < 0)
             {
-                // Target is to the left
-                turretRotationPoint.localScale = new Vector3(-1, 1, 1); // Flip the turret
+                // Target is to the left: set base rotation to look left (e.g., 180 degrees)
+                // Use transform.rotation for the base
+                transform.rotation = Quaternion.Euler(0, 0, 0); // For 3D 'left'
+                                                                  // For 2D sprite rotation, you might adjust the Z axis depending on sprite orientation
             }
             else
             {
-                // Target is to the right
-                turretRotationPoint.localScale = new Vector3(1, 1, 1); // Normal orientation
+                // Target is to the right: set base rotation to look right (0 degrees)
+                transform.rotation = Quaternion.Euler(0, 180, 0); // For 3D 'right'
             }
         }
-}
+    }
 
     private void Shoot()
     {   
