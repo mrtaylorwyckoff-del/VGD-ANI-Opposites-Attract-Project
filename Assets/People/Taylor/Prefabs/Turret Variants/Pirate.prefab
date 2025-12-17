@@ -257,7 +257,7 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  bulletPrefab: {fileID: 3027792194700130330, guid: 5ae61e98e466b714999c287a6e2049cb, type: 3}
+  bulletPrefab: {fileID: 3027792194700130330, guid: d03650ec4eebb314199d74e7cf83cd5b, type: 3}
   firingPoint: {fileID: 5160990943628480047}
   rotateSpeed: 5
   bps: 1
