@@ -25,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2284452489587606508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.1650405, y: -0.05521083, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14487445, y: 0.07224274, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4125359502259333298}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2631742461167590284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -259,6 +259,7 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 3027792194700130330, guid: aea9f788df10e5648b20edce294b740d, type: 3}
   firingPoint: {fileID: 5160990943628480047}
+  baseSpriteRenderer: {fileID: 0}
   rotateSpeed: 5
   bps: 0.125
   targetingRange: 4
