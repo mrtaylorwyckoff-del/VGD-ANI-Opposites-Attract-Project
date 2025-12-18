@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sailor sprite_0: -3284976410564205897
+      sailor sprite_1: 7695490718926465560
+      sailor sprite_2: -4650112321047971206
+      sailor sprite_3: 7103619849590430099
+      sailor sprite_4: 1156155203374566716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

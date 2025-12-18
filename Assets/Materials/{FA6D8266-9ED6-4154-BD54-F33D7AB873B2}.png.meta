@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: f82c95b8b9125da4ebf53ac7c93b153d
+guid: a13fe7c347f09624a8a8653b4429ca86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8690724860326340671
-    second: Hobo Attack Sprite Sheet knife_0
-  - first:
-      213: 1736430737791200608
-    second: Hobo Attack Sprite Sheet knife_1
-  - first:
-      213: 3175789488247163146
-    second: Hobo Attack Sprite Sheet knife_2
-  - first:
-      213: -9193860413292652763
-    second: Hobo Attack Sprite Sheet knife_3
-  - first:
-      213: -8260236951002251298
-    second: Hobo Attack Sprite Sheet knife_4
+      213: 6517472134596953029
+    second: '{FA6D8266-9ED6-4154-BD54-F33D7AB873B2}_0'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hobo Attack Sprite Sheet knife_0
+      name: '{FA6D8266-9ED6-4154-BD54-F33D7AB873B2}_0'
       rect:
         serializedVersion: 2
-        x: 78
-        y: 60
-        width: 25
-        height: 14
+        x: 0
+        y: 0
+        width: 1159
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f38686c0738ab9870800000000000000
-      internalID: 8690724860326340671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hobo Attack Sprite Sheet knife_1
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 60
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06d2d175e8a091810800000000000000
-      internalID: 1736430737791200608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hobo Attack Sprite Sheet knife_2
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 60
-        width: 45
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a094468a6bba21c20800000000000000
-      internalID: 3175789488247163146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hobo Attack Sprite Sheet knife_3
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 36
-        width: 90
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5275a2f4aa8d86080800000000000000
-      internalID: -9193860413292652763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hobo Attack Sprite Sheet knife_4
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 59
-        width: 23
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edf74f6f14ebd5d80800000000000000
-      internalID: -8260236951002251298
+      spriteID: 5c388281066b27a50800000000000000
+      internalID: 6517472134596953029
       vertices: []
       indices: 
       edges: []
@@ -260,12 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Hobo Attack Sprite Sheet knife_0: 8690724860326340671
-      Hobo Attack Sprite Sheet knife_1: 1736430737791200608
-      Hobo Attack Sprite Sheet knife_2: 3175789488247163146
-      Hobo Attack Sprite Sheet knife_3: -9193860413292652763
-      Hobo Attack Sprite Sheet knife_4: -8260236951002251298
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
