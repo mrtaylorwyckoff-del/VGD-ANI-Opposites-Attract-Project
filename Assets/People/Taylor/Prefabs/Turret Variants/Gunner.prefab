@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2284452489587606508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.30093068, y: -0.06064839, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.999945, w: -0.010491413}
+  m_LocalPosition: {x: -0.1165421, y: -0.0046117716, z: 0}
   m_LocalScale: {x: -0.4, y: -0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4125359502259333298}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 181.202}
 --- !u!212 &2631742461167590284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -252,7 +252,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4574280125800957989}
-  - component: {fileID: -4770993842895547063}
   - component: {fileID: 4209854806009520775}
   m_Layer: 0
   m_Name: Gunner
@@ -278,18 +277,6 @@ Transform:
   - {fileID: 4125359502259333298}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4770993842895547063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8261624583953747058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520e4f10d9ec132438a76f68d714b00b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4209854806009520775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +295,7 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 3027792194700130330, guid: e70272f95bac4c349bfe100dfa00f6ae, type: 3}
   firingPoint: {fileID: 5160990943628480047}
+  baseSpriteRenderer: {fileID: 0}
   rotateSpeed: 5
   bps: 4
   targetingRange: 4
@@ -336,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 9119188397973232850}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -0.2, z: 0}
+  m_LocalPosition: {x: -0.6, y: 0.1, z: 0}
   m_LocalScale: {x: 0.6, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

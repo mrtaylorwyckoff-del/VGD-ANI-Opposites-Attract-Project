@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 5deb835f59ec0bc44abf95c96162f79c
+guid: 3bdff9d7cb2e17b4981f2f2af91a8ae7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3284976410564205897
-    second: sailor sprite_0
-  - first:
-      213: 7695490718926465560
-    second: sailor sprite_1
-  - first:
-      213: -4650112321047971206
-    second: sailor sprite_2
-  - first:
-      213: 7103619849590430099
-    second: sailor sprite_3
-  - first:
-      213: 1156155203374566716
-    second: sailor sprite_4
+      213: 8458002420832584939
+    second: Seaman NO weapon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sailor sprite_0
+      name: Seaman NO weapon_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 4
-        width: 270
-        height: 397
+        x: 78
+        y: 419
+        width: 269
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b268c0fb5b6962d0800000000000000
-      internalID: -3284976410564205897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sailor sprite_1
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 217
-        width: 16
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81a6de15900ebca60800000000000000
-      internalID: 7695490718926465560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sailor sprite_2
-      rect:
-        serializedVersion: 2
-        x: 409
-        y: 34
-        width: 343
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a7ab44a3b7b777fb0800000000000000
-      internalID: -4650112321047971206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sailor sprite_3
-      rect:
-        serializedVersion: 2
-        x: 861
-        y: 0
-        width: 278
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 399504add90259260800000000000000
-      internalID: 7103619849590430099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sailor sprite_4
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 218
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3d4c5a280d7b0010800000000000000
-      internalID: 1156155203374566716
+      spriteID: be4ce1ba36cd06570800000000000000
+      internalID: 8458002420832584939
       vertices: []
       indices: 
       edges: []
@@ -261,11 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sailor sprite_0: -3284976410564205897
-      sailor sprite_1: 7695490718926465560
-      sailor sprite_2: -4650112321047971206
-      sailor sprite_3: 7103619849590430099
-      sailor sprite_4: 1156155203374566716
+      Seaman NO weapon_0: 8458002420832584939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
