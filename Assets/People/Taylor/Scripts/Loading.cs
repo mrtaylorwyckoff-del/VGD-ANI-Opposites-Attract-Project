@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSMScene : MonoBehaviour
+public class Loading : MonoBehaviour
 {
-    public float delayBeforeLoad = 1f;
+    public float delayBeforeLoad = 3f;
 
     void Start()
     {
@@ -12,6 +12,6 @@ public class LoadSMScene : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("FINAL Level 1");
+        SceneManager.LoadScene("StartMenu");
     }
 }
