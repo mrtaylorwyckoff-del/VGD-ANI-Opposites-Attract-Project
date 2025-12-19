@@ -48,11 +48,11 @@ public class Turret : MonoBehaviour
 
             if (direction.x < 0)
             {
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = false;
             }
             else
             {
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
         }
     }

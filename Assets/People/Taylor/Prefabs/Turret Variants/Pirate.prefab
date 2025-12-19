@@ -135,7 +135,7 @@ Transform:
   m_GameObject: {fileID: 3413959150947978915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0, z: 0}
+  m_LocalPosition: {x: -0.4, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -169,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 5470699098326893920}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0.2, y: 0.35, z: 0}
   m_LocalScale: {x: 0.67, y: 0.67, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -282,7 +282,7 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 3027792194700130330, guid: d03650ec4eebb314199d74e7cf83cd5b, type: 3}
   firingPoint: {fileID: 5160990943628480047}
-  baseSpriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 8469336762058396477}
   rotateSpeed: 5
   bps: 1
   targetingRange: 4
