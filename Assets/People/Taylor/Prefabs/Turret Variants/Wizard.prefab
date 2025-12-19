@@ -259,6 +259,7 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 3027792194700130330, guid: fc6fc4bcc3b13cb4581ab6f329c68d54, type: 3}
   firingPoint: {fileID: 5160990943628480047}
+  spriteRenderer: {fileID: 8469336762058396477}
   rotateSpeed: 5
   bps: 0.2
   targetingRange: 100
