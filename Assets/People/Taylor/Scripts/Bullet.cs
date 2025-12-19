@@ -79,6 +79,18 @@ public class Bullet : MonoBehaviour
             goblinKnight.TakeDamage(bulletDamage);
         }
 
+        Amalgamation amalgamation = other.gameObject.GetComponent<Amalgamation>();
+        if (amalgamation != null)
+        {
+            amalgamation.TakeDamage(bulletDamage);
+        }
+
+        IceSkeleton iceSkeleton = other.gameObject.GetComponent<IceSkeleton>();
+        if (iceSkeleton != null)
+        {
+            iceSkeleton.TakeDamage(bulletDamage);
+        }
+
         Goblin goblin = other.gameObject.GetComponent<Goblin>();
         if (goblin != null)
         {
