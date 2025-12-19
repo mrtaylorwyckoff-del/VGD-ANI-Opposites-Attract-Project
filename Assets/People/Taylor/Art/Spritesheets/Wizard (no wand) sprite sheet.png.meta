@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wizard (no wand) sprite sheet_0: -3992046636947529920
+      Wizard (no wand) sprite sheet_1: -5247496673771913770
+      Wizard (no wand) sprite sheet_2: -6677111560693247284
+      Wizard (no wand) sprite sheet_3: -1719353901301757185
+      Wizard (no wand) sprite sheet_4: 8077975450893497987
+      Wizard (no wand) sprite sheet_5: -8598254941161753705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

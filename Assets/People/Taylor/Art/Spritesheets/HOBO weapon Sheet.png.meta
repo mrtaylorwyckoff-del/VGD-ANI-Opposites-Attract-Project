@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HOBO weapon Sheet_0: -4128526216405684592
+      HOBO weapon Sheet_1: -4153201014407272445
+      HOBO weapon Sheet_2: -4880645550239638682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
