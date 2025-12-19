@@ -18,6 +18,10 @@ public class Bullet : MonoBehaviour
     public void SetTarget(Transform targetTransform)
     {
         target = targetTransform;
+
+        Vector2 direction = (target.position - transform.position).normalized;
+
+        rb.linearVelocity = direction * bulletSpeed;
     }
 
     private void FixedUpdate()
@@ -28,9 +32,7 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        Vector2 direction = (target.position - transform.position).normalized;
-
-        rb.linearVelocity = direction * bulletSpeed;
+      
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -76,5 +78,7 @@ public class Bullet : MonoBehaviour
         {
             goblin.TakeDamage(bulletDamage);
         }
+
+        Destroy(gameObject);
     }
 }
