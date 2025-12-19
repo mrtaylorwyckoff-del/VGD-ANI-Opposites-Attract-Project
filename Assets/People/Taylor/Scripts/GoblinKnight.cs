@@ -1,7 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 
 public class GoblinKnight : MonoBehaviour
 {
@@ -15,17 +12,12 @@ public class GoblinKnight : MonoBehaviour
 
     private int currentHealth;
     private bool isDestroyed = false;
-    private IMovementHandler movementHandler;
-
-    public delegate void EnemyKilledAction();
-    public static event EnemyKilledAction OnEnemyKilled;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        movementHandler = GetComponent<IMovementHandler>();
 
-        if (movementHandler != null)
+        if (TryGetComponent(out IMovementHandler movementHandler))
         {
             movementHandler.SetSpeed(baseMovementSpeed);
         }
@@ -38,10 +30,7 @@ public class GoblinKnight : MonoBehaviour
         int effectiveDamage = Mathf.RoundToInt(rawDamage * (1f - damageNegationModifier));
         currentHealth -= effectiveDamage;
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
     }
 
     private void Die()
@@ -49,16 +38,9 @@ public class GoblinKnight : MonoBehaviour
         if (isDestroyed) return;
         isDestroyed = true;
 
-        OnEnemyKilled?.Invoke();
-
         if (EnemySpawner.onEnemyDestroy != null) EnemySpawner.onEnemyDestroy.Invoke();
         if (LevelManager.main != null) LevelManager.main.AddCurrency(currencyOnDestroy);
 
         Destroy(gameObject);
     }
-
-    public int CurrentHealth => currentHealth;
-    public float BaseMovementSpeed => baseMovementSpeed;
-    public float DamageNegationModifier => damageNegationModifier;
-    public int Cost => currencyOnDestroy;
 }

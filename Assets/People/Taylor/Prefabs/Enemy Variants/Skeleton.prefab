@@ -76,13 +76,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5087138347812281799, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6182766042494440593, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1552539303781164738}
+    - targetCorrespondingSourceObject: {fileID: 6182766042494440593, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6838357706240689000}
   m_SourcePrefab: {fileID: 100100000, guid: eea07cfdd72148f41bd611249e355d12, type: 3}
 --- !u!1 &8669402417917560883 stripped
 GameObject:
@@ -111,3 +115,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6838357706240689000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669402417917560883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83c6e62c8f8e0c4d88501321251736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: Skeleton
+  health: 2
+  movementSpeed: 3
+  armor: 0
+  cost: 15

@@ -1,7 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 
 public class ZombieStats : MonoBehaviour
 {
@@ -27,30 +24,17 @@ public class ZombieStats : MonoBehaviour
     {
         currentHealth = maxHealth;
         movementHandler = GetComponent<IMovementHandler>();
-        if (movementHandler == null)
-        {
-          
-        }
-
         UpdateMovementSpeed();
     }
 
-    private void OnEnable()
-    {
-        OnEnemyKilled += UpdateMovementSpeed;
-    }
-
-    private void OnDisable()
-    {
-        OnEnemyKilled -= UpdateMovementSpeed;
-    }
+    private void OnEnable() => OnEnemyKilled += UpdateMovementSpeed;
+    private void OnDisable() => OnEnemyKilled -= UpdateMovementSpeed;
 
     public void UpdateMovementSpeed()
     {
         if (isDestroyed || movementHandler == null) return;
 
-        ZombieStats[] allZombies = FindObjectsByType<ZombieStats>(FindObjectsSortMode.None);
-
+        ZombieStats[] allZombies = Object.FindObjectsByType<ZombieStats>(FindObjectsSortMode.None);
         int otherZombiesCount = allZombies.Length - 1;
 
         float totalSpeedIncrease = otherZombiesCount * speedIncreasePerOtherZombie;
@@ -59,37 +43,19 @@ public class ZombieStats : MonoBehaviour
         movementHandler.SetSpeed(newSpeed);
     }
 
-    /// <param name="rawDamage">The incoming damage amount.</param>
     public void TakeDamage(int rawDamage)
     {
         if (isDestroyed) return;
 
         int effectiveDamage = Mathf.RoundToInt(rawDamage * (1f - damageNegationModifier));
-
         currentHealth -= effectiveDamage;
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    /// <param name="healAmount">The amount of health to restore.</param>
-    public void Heal(int healAmount)
-    {
-        if (isDestroyed) return;
-
-        currentHealth += healAmount;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
+        if (currentHealth <= 0) Die();
     }
 
     private void Die()
     {
         isDestroyed = true;
-
         OnEnemyKilled?.Invoke();
 
         if (EnemySpawner.onEnemyDestroy != null) EnemySpawner.onEnemyDestroy.Invoke();
@@ -97,11 +63,6 @@ public class ZombieStats : MonoBehaviour
 
         Destroy(gameObject);
     }
-
-    public int CurrentHealth => currentHealth;
-    public float BaseMovementSpeed => baseMovementSpeed;
-    public float DamageNegationModifier => damageNegationModifier;
-    public int Cost => currencyOnDestroy;
 }
 
 public interface IMovementHandler

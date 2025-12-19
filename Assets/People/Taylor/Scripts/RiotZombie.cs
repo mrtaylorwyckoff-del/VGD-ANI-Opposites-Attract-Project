@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class RiotZombie : MonoBehaviour
 {
+    [Header("Stats")]
     public int maxHealth = 60;
     public float baseMovementSpeed = 1.0f;
-    public float stunnedMovementSpeed = 0.0f;
     public float damageNegationPercent = 0.75f;
     public int costValue = 100;
 
@@ -20,60 +20,43 @@ public class RiotZombie : MonoBehaviour
         currentHealth = maxHealth;
         halfHealthThreshold = maxHealth / 2;
 
+        if (TryGetComponent(out IMovementHandler movement)) movement.SetSpeed(baseMovementSpeed);
     }
 
-    /// <param name="amount">The amount of raw damage before armor calculation.</param>
     public void TakeDamage(int amount)
     {
-        if (currentHealth <= 0 || isStunned) return;
+        if (isStunned) return;
 
-        float effectiveDamage = amount;
-
-        if (hasArmor)
-        {
-            effectiveDamage *= (1 - damageNegationPercent);
-        }
-
-        currentHealth -= Mathf.RoundToInt(effectiveDamage);
-
-        Debug.Log($"Took {effectiveDamage} effective damage. Current Health: {currentHealth}");
+        float multiplier = hasArmor ? (1f - damageNegationPercent) : 1f;
+        currentHealth -= Mathf.RoundToInt(amount * multiplier);
 
         if (hasArmor && currentHealth <= halfHealthThreshold)
         {
-            RemoveArmorAndStun();
+            StartCoroutine(RemoveArmorAndStun());
         }
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
     }
 
-    private void RemoveArmorAndStun()
+    private IEnumerator RemoveArmorAndStun()
     {
         hasArmor = false;
-        Debug.Log("Armor destroyed! Zombie is stunned.");
-
-        if (!isStunned)
-        {
-            StartCoroutine(StunRoutine());
-        }
-    }
-
-    private IEnumerator StunRoutine()
-    {
         isStunned = true;
+
+        if (TryGetComponent(out IMovementHandler movement)) movement.SetSpeed(0f);
 
         yield return new WaitForSeconds(stunDuration);
 
         isStunned = false;
 
-        Debug.Log("Zombie is no longer stunned.");
+        if (movement != null) movement.SetSpeed(baseMovementSpeed);
     }
 
     private void Die()
     {
-        Debug.Log("Riot Zombie destroyed. Player gains $" + costValue);
+        if (LevelManager.main != null) LevelManager.main.AddCurrency(costValue);
+        if (EnemySpawner.onEnemyDestroy != null) EnemySpawner.onEnemyDestroy.Invoke();
+
         Destroy(gameObject);
     }
 }
