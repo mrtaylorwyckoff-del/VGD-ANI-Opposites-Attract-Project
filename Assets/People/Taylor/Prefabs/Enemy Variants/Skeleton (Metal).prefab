@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7916888801237444055, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: -2039643869812292129}
+    - targetCorrespondingSourceObject: {fileID: 7916888801237444055, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 477789810804388072}
   m_SourcePrefab: {fileID: 100100000, guid: e41164a9a605fcf4cacbede244197a8b, type: 3}
 --- !u!1 &6031375027061962424 stripped
 GameObject:
@@ -109,3 +112,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &477789810804388072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031375027061962424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd5961999a7ad84293714f65669e6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 8
+  currencyOnDestroy: 30
+  movementSpeed: 3
+  damageNegationModifier: 0.2

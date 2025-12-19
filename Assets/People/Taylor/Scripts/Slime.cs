@@ -4,8 +4,8 @@ public class Slime : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField] private int health = 20;
-    [SerializeField] private float movementSpeed = 1.0f; // Set to 1
-    [SerializeField] private int currencyValue = 60;     // $60 reward
+    [SerializeField] private float movementSpeed = 1.0f; 
+    [SerializeField] private int currencyValue = 60;
 
     [Header("Resistance")]
     [Tooltip("0.5 means the slime takes 50% of incoming damage.")]

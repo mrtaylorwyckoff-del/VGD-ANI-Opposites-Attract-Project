@@ -11,7 +11,7 @@ public class Turret : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float rotateSpeed = 5f;
-    [SerializeField] private float bps = 1f; // bullets per second
+    [SerializeField] private float bps = 1f;
     [SerializeField] private float targetingRange = 5f;
 
     private Transform target;
@@ -32,7 +32,6 @@ public class Turret : MonoBehaviour
             return;
         }
 
-        // count down and fire when <= 0
         timeUntilFire -= Time.deltaTime;
         if (timeUntilFire <= 0f)
         {
@@ -40,10 +39,8 @@ public class Turret : MonoBehaviour
             timeUntilFire = 1f / Mathf.Max(0.0001f, bps);
         }
 
-        //adds animation to turn turret left or right based on target position
         if (target != null)
         {
-            // Calculate the direction vector in 2D (X and Y components)
             Vector3 direction = target.position - transform.position;
 
             if (direction.x < 0)
@@ -59,18 +56,16 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {   
-       GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
-        bulletScript.SetTarget(target);
+        bulletScript.SetTarget(target, gameObject);
     }
 
     private void FindTarget()
     {
-        // Use OverlapCircleAll for an immediate range check
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, targetingRange, enemyMask);
         if (hits.Length > 0)
         {
-            // pick the closest
             float bestDist = float.MaxValue;
             Transform best = null;
             foreach (var c in hits)

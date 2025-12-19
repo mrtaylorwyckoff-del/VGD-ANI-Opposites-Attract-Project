@@ -1,27 +1,27 @@
-using Unity.Cinemachine;
 using UnityEngine;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class Bullet : MonoBehaviour
 {
-
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
-    [SerializeField] private float damage = 1f;
     [SerializeField] private int bulletDamage = 1;
 
     private Transform target;
+    private GameObject towerOwner;
 
-    public void SetTarget(Transform targetTransform)
+    public void SetTarget(Transform targetTransform, GameObject owner)
     {
         target = targetTransform;
+        towerOwner = owner;
 
-        Vector2 direction = (target.position - transform.position).normalized;
-
-        rb.linearVelocity = direction * bulletSpeed;
+        if (target != null)
+        {
+            Vector2 direction = (target.position - transform.position).normalized;
+            rb.linearVelocity = direction * bulletSpeed;
+        }
     }
 
     private void FixedUpdate()
@@ -31,71 +31,26 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-      
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        RobotHealth robotHealth = other.gameObject.GetComponent<RobotHealth>();
-        if (robotHealth != null)
-        {
-            robotHealth.TakeDamage(bulletDamage);
-        }
+        GameObject hitObj = other.gameObject;
 
-        ZombieStats zombieStats = other.gameObject.GetComponent<ZombieStats>();
-        if (zombieStats != null)
+        if (hitObj.TryGetComponent(out IceSkeleton iceSkeleton))
         {
-            zombieStats.TakeDamage(bulletDamage);
+            iceSkeleton.TakeDamage(bulletDamage, towerOwner);
         }
-
-        Health health = other.gameObject.GetComponent<Health>();
-        if (health != null)
-        {
-            health.TakeDamage(bulletDamage);
-        }
-
-        RiotZombie riotZombie = other.gameObject.GetComponent<RiotZombie>();
-        if (riotZombie != null)
-        {
-            riotZombie.TakeDamage(bulletDamage);
-        }
-
-        Slime slime = other.gameObject.GetComponent<Slime>();
-        if (slime != null)
-        {
-            slime.TakeDamage(bulletDamage);
-        }
-
-        Skeleton skeleton = other.gameObject.GetComponent<Skeleton>();
-        if (skeleton != null)
-        {
-            skeleton.TakeDamage(bulletDamage);
-        }
-
-        GoblinKnight goblinKnight = other.gameObject.GetComponent<GoblinKnight>();
-        if (goblinKnight != null)
-        {
-            goblinKnight.TakeDamage(bulletDamage);
-        }
-
-        Amalgamation amalgamation = other.gameObject.GetComponent<Amalgamation>();
-        if (amalgamation != null)
-        {
-            amalgamation.TakeDamage(bulletDamage);
-        }
-
-        IceSkeleton iceSkeleton = other.gameObject.GetComponent<IceSkeleton>();
-        if (iceSkeleton != null)
-        {
-            iceSkeleton.TakeDamage(bulletDamage);
-        }
-
-        Goblin goblin = other.gameObject.GetComponent<Goblin>();
-        if (goblin != null)
-        {
-            goblin.TakeDamage(bulletDamage);
-        }
+        else if (hitObj.TryGetComponent(out RobotHealth robot)) robot.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out ZombieStats zombie)) zombie.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out RiotZombie riot)) riot.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out Slime slime)) slime.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out Skeleton skeleton)) skeleton.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out GoblinKnight goblinK)) goblinK.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out Amalgamation amalgamation)) amalgamation.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out Goblin goblin)) goblin.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out MetalSkeleton metalSkeleton)) metalSkeleton.TakeDamage(bulletDamage);
+        else if (hitObj.TryGetComponent(out Health generalHealth)) generalHealth.TakeDamage(bulletDamage);
 
         Destroy(gameObject);
     }
