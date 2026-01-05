@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadSMScene : MonoBehaviour
 {
-    public float delayBeforeLoad = 1f;
+    public float delayBeforeLoad = 10f;
 
     void Start()
     {
