@@ -21,11 +21,11 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 0
   m_Scenes:
   - m_enabled: 1
-    m_path: Assets/Scenes/MainScene.unity
+    m_path: Assets/People/Taylor/Scenes/MainScene.unity
   - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/StartMenu.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/TaylorScene.unity
+    m_path: Assets/People/Taylor/Scenes/TaylorScene.unity
   - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/Quit.unity
   - m_enabled: 1
@@ -35,13 +35,11 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/Settings.unity
   - m_enabled: 1
-    m_path: Assets/People/Taylor/Scenes/PLLoading.unity
-  - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/LevelSelect.unity
   - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/CarlCredits.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/FINAL Level 1.unity
+    m_path: Assets/People/Taylor/Scenes/FINAL Level 1.unity
   - m_enabled: 1
     m_path: Assets/People/Taylor/Scenes/JaydenCredits.unity
   - m_enabled: 1
