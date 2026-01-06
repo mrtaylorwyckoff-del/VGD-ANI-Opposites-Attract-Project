@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveName: Wave02
   enemies:
-  - prefab: {fileID: 8669402417917560883, guid: 03aae93a7fae0dd47a8eb1fd47deb73c, type: 3}
+  - prefab: {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
     count: 2
   - prefab: {fileID: 988884770836881220, guid: 6234fc0e3d6907d49bb96ed5b4f0fe25, type: 3}
     count: 2

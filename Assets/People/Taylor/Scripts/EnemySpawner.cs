@@ -61,7 +61,7 @@ public class EnemySpawner : MonoBehaviour
     private void EnemyDestroyed()
     {
         enemiesAlive--;
-
+        Debug.Log($"Enimies Alive: {enemiesAlive} ---- Enimies Left To Spawn: {enemiesLeftToSpawn}");
         if (enemiesAlive <= 0 && enemiesLeftToSpawn <= 0)
         {
             EndWave();
@@ -82,6 +82,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void EndWave()
     {
+        Debug.Log("tyulihkvkhikvjkvjlbi");
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         spawnSequence = null;
@@ -103,15 +104,7 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            //fallback to random spawning based on current wave
-            for (int i = 0; i < enemiesLeftToSpawn; i++)
-            {
-                int prefabIndex = Random.Range(0, enemyPrefabs.Length);
-                spawnSequence.Add(enemyPrefabs[prefabIndex]);
-            }
-        }
+        
     }
 
     // Spawn the next enemy in the sequence please copilot I'm begging you
