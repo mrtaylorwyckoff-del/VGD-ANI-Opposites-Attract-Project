@@ -7332,7 +7332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f331662bc59b6d44cbc738c57fd0954e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 475592238}
+  pausePanel: {fileID: 84278609}
 --- !u!1 &476422513
 GameObject:
   m_ObjectHideFlags: 0
@@ -22989,7 +22989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
