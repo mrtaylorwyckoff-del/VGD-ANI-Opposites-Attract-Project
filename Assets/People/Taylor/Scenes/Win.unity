@@ -448,8 +448,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToQuitOn: Win
   quitDelay: 5
-  startSize: {x: 0, y: 0, z: 0}
-  endSize: {x: 0, y: 0, z: 0}
+  startSize: {x: 1, y: 1, z: 1}
+  endSize: {x: 1, y: 1, z: 1}
 --- !u!1 &1827880860
 GameObject:
   m_ObjectHideFlags: 0
