@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thumbnail_Knight credit_0: 6329765668782377467
+      thumbnail_Knight credit_1: 4741821223902386948
+      thumbnail_Knight credit_10: -6171582164590148612
+      thumbnail_Knight credit_11: -2688139007931068450
+      thumbnail_Knight credit_2: 8815227432356369852
+      thumbnail_Knight credit_3: -7177105121249389731
+      thumbnail_Knight credit_4: -3900425314852413295
+      thumbnail_Knight credit_5: 7757177698538504707
+      thumbnail_Knight credit_6: -8519473081923941622
+      thumbnail_Knight credit_7: 3188921634461716404
+      thumbnail_Knight credit_8: -6392974162129661784
+      thumbnail_Knight credit_9: 7926568166688596003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
