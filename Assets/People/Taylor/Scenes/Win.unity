@@ -443,13 +443,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 716901306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211d516a980c00240aebf02a479e04e0, type: 3}
+  m_Script: {fileID: 11500000, guid: a8d5d1fdfb150ee40a508a33fdf47080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToQuitOn: Quit
-  quitDelay: 0.5
-  startSize: {x: 0.5, y: 0.5, z: 0.5}
-  endSize: {x: 3, y: 3, z: 3}
+  sceneToQuitOn: Win
+  quitDelay: 5
+  startSize: {x: 0, y: 0, z: 0}
+  endSize: {x: 0, y: 0, z: 0}
 --- !u!1 &1827880860
 GameObject:
   m_ObjectHideFlags: 0
