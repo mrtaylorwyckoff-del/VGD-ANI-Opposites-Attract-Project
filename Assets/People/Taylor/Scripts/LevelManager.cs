@@ -29,8 +29,11 @@ public class LevelManager : MonoBehaviour
     public bool SpendCurrency(int amount)
     {
         if (amount <= currency)
+        {
             currency -= amount;
-        return true;
+            return true;
+        }
+        else
         {
             Debug.Log("you broke cuh");
             return false;
